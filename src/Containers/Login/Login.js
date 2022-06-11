@@ -1,35 +1,28 @@
-import React, {useState} from "react";
+import React from "react";
 import './Login.css';
-import CompLogin from "./LoginComponent/LoginComponent";
+import ButtonLogin from "./LoginComponent/ButtonLogin";
+import TitleLogin from "./LoginComponent/TitleLogin";
+import Input from "./LoginComponent/Input";
+import TextPregunta from "./LoginComponent/TextPregunta";
 
 
 
 const Login = () => {
-
-    const [ user, setUser ] = useState('');
-
-    function handleChange(name, value) {
-        if(name === 'usuario') {
-            setUser(value)
-
-        }
-    }
-
-    console.log('usuario', user)
-
 return(
-
-    <CompLogin
-    attribute={{
-        id: 'usuario',
-        name:'usuario',
-        type:'text',
-        placeHolder: 'Ingrese su usuario'
-        
-    }}
-
-    handleChange={handleChange}
-    />
+    <div>
+        <TitleLogin/>
+        <Input
+        attribute={{
+            id: 'usuario',
+            name: 'usuario',
+            type: 'text',
+            placeholder: 'Usuario'
+            
+        }}/>
+        <ButtonLogin/>
+        <TextPregunta/>
+       
+</div>
         )
     
 }
