@@ -1,30 +1,35 @@
-import React from "react";
-import './Login.css'
+import React, {useState} from "react";
+import './Login.css';
+import CompLogin from "./LoginComponent/LoginComponent";
 
 
-let texth2 = ['LABURADOS', <b className="login__change__color"> MARKET</b>]
 
-function Login () {
-    return(
-    
-<section className="index__login">
+const Login = () => {
 
-    <div className="container"></div>
-<center>
+    const [ user, setUser ] = useState('');
 
-<form action="" method="POST"/>
-<h2 className="login__title">{texth2}</h2>
-<br/>
-<input type='text' placeholder='Usuario' name='usuario' id='usuario' minLength='1' required/>
-<br/><br/>
-<input type='password' placeholder="Contraseña" name="password" id="password"  minLength='1' required/>
-<div className="mt-3">
-<button class="btn_login" id="liveAlertBtn">LOG IN <i class='bx bx-right-arrow-alt' ></i> </button><br/>
-</div>
-<br/><p class="align-left">¿No tienes cuenta? <a href="/register"><b class="register_color">Registrarse</b></a></p><br/>
-</center>
+    function handleChange(name, value) {
+        if(name === 'usuario') {
+            setUser(value)
 
-</section>        
+        }
+    }
+
+    console.log('usuario', user)
+
+return(
+
+    <CompLogin
+    attribute={{
+        id: 'usuario',
+        name:'usuario',
+        type:'text',
+        placeHolder: 'Ingrese su usuario'
+        
+    }}
+
+    handleChange={handleChange}
+    />
         )
     
 }

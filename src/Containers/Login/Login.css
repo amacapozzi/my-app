@@ -1,44 +1,24 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    margin: 5px;
-    scroll-behavior: smooth;
-    max-height: 120%;
-    height: 120%
+
+
+
+#login{
+    margin: 29vh
 }
 
-body{
-    line-height: inherit;
-    margin: 30vh;
-}
-
-
-::-webkit-scrollbar {
-    width: 8px
- 
-}
-
-
-.login__title {
+#login .login__title{
     color: #f74d4d;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Flex', sans-serif;
+    font-family: 'Roboto Flex', sans-serif;  
 }
 
-.login__change__color {
+#login .login__change__color {
     color: rgb(255, 255, 255);
 }
 
-.align-left{
+#login .align-left{
     color: #fff; 
+    font-family: 'Poppins', sans-serif;
 }
 
 input,
@@ -56,100 +36,71 @@ input:active {
 }
 
 .apart{
-width: 250px;
-}
-.apart:active{
-width: 250px;
-}
-.apart:focus{
     width: 250px;
     }
-
-input:focus {
-    background-color:  rgba(2, 0, 0, 0.863);
-    width: 300px;
-    padding: 10px;
-    outline: none;
-    border: 1px solid #ffffffbb;
-    border-radius: 3px;
-    resize: none;
-    color: #fff
-}
-
-.register_color {
-   color:  #f74d4d;
-
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f100
-}
-
-::-webkit-scrollbar-thumb {
-    background: #848484;
-    border-radius: 5px
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #747373
-}
-
-
-
-.btn_login {
-    padding: 0px;
-    height: 40px;
-    width: 85px;
-    border: 1px solid #f74d4db2;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    background-color: rgba(2, 0, 0, 0.267) ;
-}
-
-
-
-.btn__register {
-    padding: 0px;
-    height: 40px;
-    width: 120px;
-    border: 1px solid #f74d4db2;
-    outline: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Flex', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    background-color: rgba(2, 0, 0, 0.267) ;
-}
-
-.secret_code {
-    width: 225px;
-  
-}
-.secret_code:focus{
-    width: 255px;
-}
-.secret_code:active{
-    width: 255px;
-}
-
-
-
-/* Google Font Import - Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-
+    .apart:active{
+    width: 250px;
+    }
+    .apart:focus{
+        width: 250px;
+        }
+    
+    input:focus {
+        background-color:  rgba(2, 0, 0, 0.863);
+        width: 300px;
+        padding: 10px;
+        outline: none;
+        border: 1px solid #ffffffbb;
+        border-radius: 3px;
+        resize: none;
+        color: #fff
+    }
+    
+    .register_color {
+       color:  #f74d4d;
+    
+    }
+    .btn_login {
+        padding: 0px;
+        height: 40px;
+        width: 85px;
+        border: 1px solid #f74d4db2;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        background-color: rgba(2, 0, 0, 0.267) ;
+    }
+    
+    
+    
+    .btn__register {
+        padding: 0px;
+        height: 40px;
+        width: 120px;
+        border: 1px solid #f74d4db2;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        background-color: rgba(2, 0, 0, 0.267) ;
+    }
+    
+    .secret_code {
+        width: 225px;
+      
+    }
+    .secret_code:focus{
+        width: 255px;
+    }
+    .secret_code:active{
+        width: 255px;
+    }

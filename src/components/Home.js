@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonEmp from "./Button";
 import NabVar from "./Navbar";
-import '../styles/Style.css'
+
 
 let imgsvg = './imagen.svg'
 let derechos = 'Student'
@@ -10,7 +10,7 @@ let titlemain = ['Laburados market, servicios de alta calidad y ', <br/>, 'mejor
 function Home () {
     return (
   
-      <div className='App'>
+      <div className='App' id='home_id'>
     <header>
       <div>
         <p className='logo'> LABU<b className='normal__opacity'>RADOS</b><b className='medium__opacity'>MAR</b><b className='plus__opacity'>KET</b></p>
@@ -22,7 +22,7 @@ function Home () {
       <section className='button__and__title'>
         <div className='ind'>
         <h2 className='one__title'>{titlemain}</h2>
-        <br />
+      
         <ButtonEmp/>
         </div>
       </section>
