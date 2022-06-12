@@ -18,7 +18,7 @@ function Home () {
       </div>
       <NabVar/>
       </header>
-      <img class="change__imagen" src={imgsvg} alt=""></img>
+      <img s class="change__imagen" src={imgsvg} alt=""></img>
       <section className='button__and__title'>
         <div className='ind'>
         <h2 className='one__title'>{titlemain}</h2>
