@@ -1,10 +1,10 @@
 import React  from "react";
-import '../Login.css'
+import '../Register.css'
 
 let texth2 = ['LABURADOS', <b className="login__change__color"> MARKET</b>]
 
 
-function TitleLogin () {
+function TitleRegister () {
     return(
         <div>
     <div className="container"></div>
@@ -14,4 +14,4 @@ function TitleLogin () {
     )
 }
 
-export default TitleLogin;
+export default TitleRegister;

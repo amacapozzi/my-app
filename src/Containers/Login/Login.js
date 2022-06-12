@@ -1,28 +1,49 @@
 import React from "react";
 import './Login.css';
-import ButtonLogin from "./LoginComponent/ButtonLogin";
 import TitleLogin from "./LoginComponent/TitleLogin";
 import Input from "./LoginComponent/Input";
 import TextPregunta from "./LoginComponent/TextPregunta";
 
 
 
+
 const Login = () => {
+    
+
+
 return(
-    <div>
-        <TitleLogin/>
+    <section id="login">
+        <center>
+        <TitleLogin/><br/>
         <Input
         attribute={{
-            id: 'usuario',
-            name: 'usuario',
+            id: 'username',
+            name: 'username',
             type: 'text',
             placeholder: 'Usuario'
             
-        }}/>
-        <ButtonLogin/>
+        }}
+     
+        />
+        <br/>
+           <Input
+        attribute={{
+            id: 'contraseña',
+            name: 'contraseña',
+            type: 'password',
+            placeholder: 'password'
+            
+        }}
+      
+        />
+
+        <br/>
+
+        <button  class="btn_login" id="liveAlertBtn">LOG IN <i class='bx bx-right-arrow-alt' ></i> </button><br/>
         <TextPregunta/>
-       
-</div>
+        </center>
+        </section>
+   
         )
     
 }
