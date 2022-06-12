@@ -91,7 +91,7 @@ const Register = () => {
 
               <button type="sumbit"  class="btn__register" id="liveAlertBtn">REGISTRARSE <i class='bx bx-right-arrow-alt' ></i> </button><br/>
               {mensaje  &&  <div className="absolute right-0 top-0 m-5">
-              <div class="flex items-center bg-green-500 border-l-4 border-green-700 py-2 px-3 shadow-md mb-2">
+              <div class="flex items-center text-lime-600 border-l-4 border-green-700 py-2 px-3 shadow-md mb-2">
 
     <div class="text-green-500 rounded-full bg-white mr-3">
       <svg width="1.8em" height="1.8em" viewBox="0 0 16 16" class="bi bi-check" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
