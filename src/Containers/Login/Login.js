@@ -29,7 +29,7 @@ const Login = () => {
       };
       setLoading(true);
       await axios
-        .post("http://localhost:4000/login", Usuario)
+        .post("http://181.229.81.24:4000/login", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);
