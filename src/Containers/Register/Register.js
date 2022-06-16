@@ -34,7 +34,7 @@ const Register = () => {
       };
       setLoading(true);
       await axios
-        .post("http://181.229.81.24:4000/register", Usuario)
+        .post("https://bckapi.herokuapp.com/register", Usuario)
         .then((res) => {
           const { data } = res;
           setMensaje(data.mensaje);
